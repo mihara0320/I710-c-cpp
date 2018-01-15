@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Americana",
+    "ingredients": [
+      "pizza base",
+      "pizza sauce",
+      "cheese",
+      "bacon",
+      "pineapple",
+      "olives"
+    ]
+  },
+  {
+    "name": "Margherita",
+    "ingredients": [
+      "pizza base",
+      "pizza sauce",
+      "cheese",
+      "cheese"
+    ]
+  }
+]
