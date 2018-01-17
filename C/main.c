@@ -15,7 +15,7 @@ int getNumberOfIndex(const char *file_name) {
 	{
 		int c;
 		int i = 0;
-		
+
 		while ((c = fgetc(f)) != EOF) {
 			char *currentEvent = eventType[i];
 			if (currentEvent == eventType[0]) {
@@ -66,7 +66,7 @@ int main(int argc, char **argv) {
 			else if (currentEvent == eventType[2]) {
 				sortedArray[indexPointer] = currentValue; // assign value to current index
 			}
-			
+
 			if (i == 3) {
 				i = 0;
 			}
@@ -84,16 +84,16 @@ int main(int argc, char **argv) {
 		}
 	}
 
-	int *result = malloc(sizeof(int) * (indices-1) * 1);
+	int *result = malloc(sizeof(int) * (indices - 1) * 1);
 
 	for (size_t i = 0; i < indices; i++)
 	{
-		if (i < indices-1) {
+		if (i < indices - 1) {
 			result[i] = getDifference(sortedArray[i], sortedArray[i + 1]);
 		}
 	}
 
-	for (size_t i = 0; i < indices-1; i++)
+	for (size_t i = 0; i < indices - 1; i++)
 	{
 		printf("%i", result[i]);
 		(i < indices - 2) && printf(",");
@@ -102,5 +102,5 @@ int main(int argc, char **argv) {
 	free(sortedArray);
 	free(result);
 
-	return errorOccurred ? (fprintf(stderr, "Something went wrong!\n"), -1): (fprintf(stdout, "\n"), 0);
+	return errorOccurred ? (fprintf(stderr, "Something went wrong!\n"), -1) : (fprintf(stdout, "\n"), 0);
 }
