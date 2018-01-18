@@ -27,12 +27,24 @@
     <ClInclude Include="json.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Kitchen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Counter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CppAssignment.cpp">
+    <ClCompile Include="PizzaShop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Kitchen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Counter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
